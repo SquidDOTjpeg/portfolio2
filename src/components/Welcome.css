@@ -1,0 +1,19 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.flex-item {
+    display: inline-flex;
+    margin: auto;
+}
+
+.flex-item p {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.beeg {
+    font-size: 10em;
+}
