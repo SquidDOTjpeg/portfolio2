@@ -1,12 +1,12 @@
 .welcome-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    height: 100vh;
+    width: 100%;
 }
 
 .flex-item {
-    display: inline-flex;
     margin: auto;
 }
 
@@ -15,5 +15,33 @@
 }
 
 .beeg {
-    font-size: 10em;
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.smol {
+    font-size: 5rem;
+}
+
+.arrow {
+    position: relative;
+    width: 50%;
+    transform: rotate(180deg);
+    animation-name: arrow-motion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow-motion {
+    0% {
+        top: 0px;
+       
+    }
+    50% {
+        top: 30px;
+       
+    }
+    100% {
+        top: 0px
+    }
 }
