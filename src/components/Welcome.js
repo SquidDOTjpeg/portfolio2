@@ -5,8 +5,8 @@ function Welcome() {
     return (
         <div className="welcome-container">
             <div className="flex-item">
-                <p><span className="beeg">Hello!</span></p>
-                <p><span className="smol">Thanks for visiting.</span></p>
+                <p className="beeg">Hello!</p>
+                <p className="smol">Thanks for visiting.</p>
             </div>
             <div className="flex-item">
                 <img src={arrow} alt="arrow" className="arrow"/>

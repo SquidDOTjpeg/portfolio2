@@ -1,0 +1,11 @@
+.flex-item {
+    margin: auto;
+}
+
+.flex-item p {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.flex{
+    display: flex;
+}

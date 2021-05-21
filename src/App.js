@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Nav from "./components/Nav"
+import About from "./components/About"
 import Welcome from "./components/Welcome"
 import './App.css';
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       {/* <Nav /> */}
       <Welcome />
+      <About />
     </div>
   );
 }
