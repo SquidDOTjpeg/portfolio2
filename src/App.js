@@ -5,21 +5,26 @@ import Welcome from "./components/Welcome"
 import Top from "./components/Top"
 import { Waypoint } from "react-waypoint"
 import './App.css';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import Watcher from './components/Watcher';
 
 function App() {
   const [hasScrolled, setHasScrolled] = useState(false)
+  const [nav, setNav] = useState(true)
 
   function handleBottomWaypoint() {
-    setHasScrolled(true)
+    if (!hasScrolled) {
+      setHasScrolled(true)
+    } else {
+      setHasScrolled(false)
+    }
   }
 
   return (
     <div className="App">
-      {/* <Nav /> */}
       <Top hasScrolled={hasScrolled} />
       <About />
-      <Waypoint onEnter={handleBottomWaypoint} />
+      <Watcher hasScrolled={hasScrolled} callBack={handleBottomWaypoint} />
     </div>
   );
 }

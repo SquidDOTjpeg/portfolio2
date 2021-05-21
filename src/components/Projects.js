@@ -1,6 +1,8 @@
+import "./index.css"
+
 function Projects() {
     return (
-        <div>
+        <div className="full-height">
             <p>pppp</p>
         </div>
     )
