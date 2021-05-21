@@ -1,9 +1,9 @@
 import { Waypoint } from "react-waypoint"
 
-function Watcher({ hasScrolled, callBack }) {
-    if (!hasScrolled) {
+function Watcher({ active, onEnter, onLeave }) {
+    if (active) {
         return (
-            <Waypoint onEnter={callBack} />
+            <Waypoint onEnter={onEnter} onLeave={onLeave} />
         )
     } else {
         return null
