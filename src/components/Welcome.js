@@ -1,6 +1,6 @@
 import "./Welcome.css"
 import arrow from "../assets/Arrow.png"
-
+ 
 function Welcome() {
     return (
         <div className="welcome-container">

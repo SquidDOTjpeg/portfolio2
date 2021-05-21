@@ -1,15 +1,21 @@
 import "./About.css"
 import "./index.css"
+import { Waypoint } from "react-waypoint"
 
 function About() {
-    return (
-        <div className="flex about">
-            <div className="flex-item">
 
+    function caca() {
+        console.log("caca")
+    }
+
+    return (
+        <div className="flex about" id="test">
+            <div className="flex-item">
                 <p>I code websites</p>
             </div>
         </div>
     )
 }
+
 
 export default About
