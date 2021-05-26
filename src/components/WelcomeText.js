@@ -2,9 +2,9 @@ import "./index.css"
 import "./Welcome.css"
 import arrow from "../assets/Arrow.png"
 
-function Welcome({ animate }) {
+function WelcomeText({ animate }) {
     return (
-        <div className={`welcome-container ${animate ? "fly-in" : ""}`}>
+        <div className="welcome-container fly-in">
             <div className="flex-item">
                 <p className="beeg">Hello!</p>
                 <p className="smol">Thanks for visiting.</p>
@@ -16,4 +16,4 @@ function Welcome({ animate }) {
     )
 }
 
-export default Welcome
+export default WelcomeText

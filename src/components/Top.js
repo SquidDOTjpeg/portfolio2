@@ -2,7 +2,7 @@ import Welcome from "./Welcome"
 import Projects from "./Projects"
 import { Waypoint } from "react-waypoint";
 
-function Top({ hasScrolled }) {
+function Top({ animate, hasScrolled }) {
 
     if (hasScrolled) {
         return (
@@ -12,7 +12,7 @@ function Top({ hasScrolled }) {
         )
     } else {
         return (
-            <Welcome></Welcome>
+            <Welcome animate={animate}></Welcome>
         )
     }
 }
