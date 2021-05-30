@@ -1,6 +1,6 @@
 import "./index.css"
 import "./Welcome.css"
-import arrow from "../assets/Arrow.png"
+import Arrow from "./Arrow"
 
 function Welcome({ animate }) {
     return (
@@ -10,7 +10,7 @@ function Welcome({ animate }) {
                 <p className="smol">Thanks for visiting.</p>
             </div>
             <div className="flex-item">
-                <img src={arrow} alt="arrow" className="arrow" />
+                <Arrow animation={true} />
             </div>
         </div>
     )

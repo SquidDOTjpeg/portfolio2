@@ -7,14 +7,6 @@
     background-color: rgb(255, 255, 255);
 }
 
-.flex-item {
-    margin: auto;
-}
-
-.flex-item p {
-    font-family: "Ubuntu", sans-serif;
-}
-
 .beeg {
     font-size: 10rem;
     font-weight: 700;
@@ -36,11 +28,9 @@
 @keyframes arrow-motion {
     0% {
         top: 0px;
-       
     }
     50% {
         top: 30px;
-       
     }
     100% {
         top: 0px
