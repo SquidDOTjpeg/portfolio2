@@ -10,7 +10,7 @@ function Welcome({ animate }) {
                 <p className="smol">Thanks for visiting.</p>
             </div>
             <div className="flex-item">
-                <Arrow animation={true} />
+                <Arrow animationDirection={true} />
             </div>
         </div>
     )

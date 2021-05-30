@@ -3,15 +3,16 @@ import "./index.css"
 import List from "./List"
 import arrow from "../assets/Arrow.png"
 import Arrow from "./Arrow"
+import { useEffect, useState } from "react"
 
 
 function About() {
-
+    const [arrow, setArrow] = useState(1000)
 
     return (
         <div className="default-container" id="test">
             <div>
-                <Arrow animation={false} />
+                <Arrow show={arrow} animationDirection={false} />
             </div>
             <div className="avatar test"></div>
             <div className="test2">
