@@ -7,7 +7,6 @@ import { useEffect, useState } from "react"
 
 
 function About() {
-    // const [arrowTimeOut, setArrowTimeOut] = useState(1000)
 
     return (
         <div className="default-container" id="test">
