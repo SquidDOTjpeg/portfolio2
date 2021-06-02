@@ -7,12 +7,12 @@ import { useEffect, useState } from "react"
 
 
 function About() {
-    const [arrow, setArrow] = useState(1000)
+    // const [arrowTimeOut, setArrowTimeOut] = useState(1000)
 
     return (
         <div className="default-container" id="test">
             <div>
-                <Arrow show={arrow} animationDirection={false} />
+                <Arrow length={3} delay={3} animationDirection={0} />
             </div>
             <div className="avatar test"></div>
             <div className="test2">
