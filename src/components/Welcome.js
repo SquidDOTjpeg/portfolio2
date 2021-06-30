@@ -1,8 +1,16 @@
 import "./index.css"
 import "./Welcome.css"
+import { useState } from "react"
 import Arrow from "./Arrow"
 
-function Welcome({ animate }) {
+function Welcome() {
+
+    const [animate, setAnimate] = useState(true)
+
+    setTimeout(() => {
+        setAnimate(false)
+    }, 1000)
+
     return (
         <div className={`welcome-container ${animate ? "fly-in" : ""}`}>
             <div className="flex-item">

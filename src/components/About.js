@@ -1,10 +1,7 @@
 import "./About.css"
 import "./index.css"
 import List from "./List"
-import arrow from "../assets/Arrow.png"
 import Arrow from "./Arrow"
-import { useEffect, useState } from "react"
-
 
 function About() {
 
